@@ -1,0 +1,28 @@
+<h1>Números Random Directiva Style</h1>
+<button (click)="generarNumero()">Generar número</button>
+<ul>
+    <li *ngFor="let num of numeros"
+    [style.color]="num % 2 == 0 ? 'green': 'red'">
+        {{num}}
+    </li>
+</ul>
+<hr />
+<ul>
+    <li *ngFor="let num of numeros"
+    [class.verde]="num % 2 == 0"
+    [class.rojo]="num % 2 == 1">
+        {{num}}
+    </li>
+</ul>
+<hr />
+<ul>
+    <li *ngFor="let num of numeros"
+    [ngClass]="{
+        verde: num % 2 == 0,
+        rojo: num % 2 == 1
+    }">
+        {{num}}
+    </li>
+</ul>
+
+<hr />

@@ -1,0 +1,14 @@
+.positivo{
+    background-color: blue;
+    color: black;
+}
+
+.negativo{
+    background-color: orange;
+    color: black;
+}
+
+.cero{
+    background-color: black;
+    color: white;
+}

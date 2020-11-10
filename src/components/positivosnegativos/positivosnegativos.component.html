@@ -1,0 +1,12 @@
+<h1>Positivos Negativos</h1>
+<button (click)="generarNumero()">Generar número</button>
+<ul>
+    <li *ngFor="let num of numeros"
+    [ngClass]="{
+        positivo: num > 0,
+        negativo: num < 0,
+        cero: num == 0
+    }">
+        {{num}}
+    </li>
+</ul>
